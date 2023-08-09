@@ -24,9 +24,7 @@ class DetailedNewsPage extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context); // Navigate back to previous page
-                    },
+                    onTap: () => Navigator.pop(context),
                     child: Container(
                       width: 32,
                       height: 32,

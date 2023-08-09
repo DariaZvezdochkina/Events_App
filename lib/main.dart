@@ -3,6 +3,7 @@ import 'package:events_app/src/features/presentation/pages/detailed_news_page.da
 import 'package:events_app/src/features/presentation/pages/home_page.dart';
 import 'package:events_app/src/features/presentation/pages/login_page.dart';
 import 'package:events_app/src/features/presentation/pages/main_page.dart';
+import 'package:events_app/src/features/presentation/pages/my_events_page.dart';
 import 'package:events_app/src/features/presentation/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,13 +19,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.splash,
-      routes:
-      {
+      routes: {
         Routes.splash: (context) => const SplashPage(),
         Routes.login: (context) => const LoginPage(),
         Routes.main: (context) => const MainPage(),
         Routes.home: (context) => const HomePage(),
-        Routes.detailedNews: (context) => const DetailedNewsPage()
+        Routes.detailedNews: (context) => const DetailedNewsPage(),
+        Routes.myEvents: (context) => const MyEventsPage()
       },
     );
   }

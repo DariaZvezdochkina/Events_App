@@ -51,7 +51,7 @@ class ProfileWidget extends StatelessWidget {
                 imagePath = "assets/icons/my_events_ic.svg";
                 break;
               case 2:
-                title = "Сервисы?";
+                title = "Сервисы";
                 imagePath = "assets/icons/services_ic.svg";
                 break;
               case 3:
@@ -70,7 +70,7 @@ class ProfileWidget extends StatelessWidget {
             return Column(
               children: [
                 GestureDetector(
-                  onTap: () => Navigator.pushNamed(context, Routes.detailedNews),
+                  onTap: () => Navigator.pushNamed(context, Routes.myEvents),
                   child: ProfileMenuTab(
                     title: title,
                     image: SvgPicture.asset(imagePath),
