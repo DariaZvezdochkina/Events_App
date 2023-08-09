@@ -5,8 +5,15 @@ import '../../../core/utils/constants.dart';
 class DotIndicator extends StatelessWidget {
   final int pageCount;
   final int activeIndex;
+  final Color color;
+  final Color inactiveColor;
 
-  const DotIndicator({super.key, required this.pageCount, required this.activeIndex});
+  const DotIndicator(
+      {super.key,
+      required this.pageCount,
+      required this.activeIndex,
+      required this.color,
+      required this.inactiveColor});
 
   Widget _buildDotIndicator({required Color color, double? size = 8, bool isActive = false}) {
     return AnimatedContainer(
@@ -15,7 +22,7 @@ class DotIndicator extends StatelessWidget {
       margin: const EdgeInsets.only(right: 12),
       duration: const Duration(milliseconds: NumberConstants.animationDuration),
       decoration: BoxDecoration(
-        color: isActive ? color : Colors.white,
+        color: isActive ? color : inactiveColor,
         shape: BoxShape.circle,
       ),
       child: isActive
@@ -34,7 +41,7 @@ class DotIndicator extends StatelessWidget {
 
     for (var i = 0; i < pageCount; i++) {
       final isActive = i == activeIndex;
-      final indicator = _buildDotIndicator(color: const Color(0xFFC60033), isActive: isActive);
+      final indicator = _buildDotIndicator(color: color, isActive: isActive);
       dots.add(indicator);
     }
 

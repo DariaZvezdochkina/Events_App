@@ -1,6 +1,8 @@
 import 'package:events_app/styles/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
+import 'carousel_widget.dart';
+
 class ToggleTab extends StatefulWidget {
   const ToggleTab({super.key});
 
@@ -14,7 +16,12 @@ class ToggleTabState extends State<ToggleTab> {
   Widget _buildContent() {
     switch (_currentIndex) {
       case 0:
-        return Text("1");
+        return Column(
+          children: const [
+            SizedBox(height: 16),
+            CarouselWidget(),
+          ],
+        );
       case 1:
         return Text("2");
       default:

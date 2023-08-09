@@ -180,7 +180,12 @@ class _MainPageState extends State<MainPage> {
                         const SizedBox(
                           height: 13,
                         ),
-                        DotIndicator(pageCount: totalPageCount, activeIndex: activePageIndex),
+                        DotIndicator(
+                          pageCount: totalPageCount,
+                          activeIndex: activePageIndex,
+                          color: const Color(0xFFC60033),
+                          inactiveColor: Colors.white,
+                        ),
                         const SizedBox(
                           height: 32,
                         )
