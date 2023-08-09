@@ -65,3 +65,13 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+
+  fonts:
+    - family: Sansation
+      fonts:
+        - asset: assets/fonts/Sansation_Bold.ttf
+        - asset: assets/fonts/Sansation_Bold_Italic.ttf
+        - asset: assets/fonts/Sansation_Italic.ttf
+        - asset: assets/fonts/Sansation_Light.ttf
+        - asset: assets/fonts/Sansation_Light_Italic.ttf
+        - asset: assets/fonts/Sansation_Regular.ttf

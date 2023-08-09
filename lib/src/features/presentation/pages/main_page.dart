@@ -6,6 +6,7 @@ import 'package:events_app/src/features/presentation/widgets/unique_services_for
 import 'package:flutter/material.dart';
 
 import '../../../core/utils/constants.dart';
+import '../../../core/utils/routes.dart';
 import '../widgets/button_widget.dart';
 
 class MainPage extends StatefulWidget {
@@ -145,7 +146,9 @@ class _MainPageState extends State<MainPage> {
                               ButtonWidget(
                                 backgroundColor: const Color.fromRGBO(242, 243, 245, 0.40),
                                 textColor: Colors.white,
-                                callback: () {},
+                                callback: () {
+                                  Navigator.pushNamed(context, Routes.home);
+                                },
                                 text: 'Пропустить',
                               ),
                           ],

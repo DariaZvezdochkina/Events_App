@@ -6,20 +6,22 @@ class ButtonWidget extends StatelessWidget {
   final String text;
   final Color? textColor;
   final Color? backgroundColor;
+  final double? size;
 
   const ButtonWidget(
       {required this.callback,
       required this.text,
       required this.textColor,
       required this.backgroundColor,
-      super.key});
+      super.key,
+      this.size = 56});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: callback,
       child: Container(
-        height: 56,
+        height: size,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: backgroundColor,
