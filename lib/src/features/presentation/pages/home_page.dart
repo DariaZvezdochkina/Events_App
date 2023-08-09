@@ -1,3 +1,4 @@
+import 'package:events_app/src/features/presentation/widgets/profile_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -72,7 +73,7 @@ class HomePageState extends State<HomePage> {
       case 2:
         return const Text("Чат");
       case 3:
-        return const Text("Профиль");
+        return const ProfileWidget();
       default:
         return Container();
     }

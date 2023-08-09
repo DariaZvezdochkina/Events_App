@@ -5,7 +5,6 @@ import '../../../../styles/custom_text_style.dart';
 import '../../../core/utils/routes.dart';
 
 class EventsProgramForm extends StatelessWidget {
-
   const EventsProgramForm({super.key});
 
   @override
