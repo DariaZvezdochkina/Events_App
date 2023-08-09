@@ -25,6 +25,10 @@ class HomePageState extends State<HomePage> {
 
   Widget _buildTabItem(int index) {
     final tabItem = _tabs[index];
+    ColorFilter colorFilter = ColorFilter.mode(
+      _currentIndex == index ? Colors.black : Colors.grey,
+      BlendMode.srcIn,
+    );
 
     return GestureDetector(
       onTap: () {
@@ -44,7 +48,7 @@ class HomePageState extends State<HomePage> {
                   tabItem.icon,
                   width: 24,
                   height: 24,
-                  color: _currentIndex == index ? Colors.black : Colors.grey,
+                  colorFilter: colorFilter,
                 ),
           Text(tabItem.title,
               style: CustomTextStyle.textStyle12.copyWith(
