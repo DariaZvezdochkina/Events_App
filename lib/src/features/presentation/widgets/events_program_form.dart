@@ -2,6 +2,7 @@ import 'package:events_app/src/features/presentation/widgets/button_widget.dart'
 import 'package:flutter/material.dart';
 
 import '../../../../styles/custom_text_style.dart';
+import '../../../core/utils/routes.dart';
 
 class EventsProgramForm extends StatelessWidget {
 
@@ -34,7 +35,7 @@ class EventsProgramForm extends StatelessWidget {
                 ButtonWidget(
                   backgroundColor: const Color(0xFFC60033),
                   textColor: Colors.white,
-                  callback: (){},
+                  callback: () => Navigator.pushNamed(context, Routes.home),
                   text: 'Начать работу',
                 ),
               ],

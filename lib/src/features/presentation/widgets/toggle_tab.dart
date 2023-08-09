@@ -1,3 +1,4 @@
+import 'package:events_app/src/features/presentation/widgets/global_trends_widget.dart';
 import 'package:events_app/styles/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class ToggleTabState extends State<ToggleTab> {
           ],
         );
       case 1:
-        return Text("2");
+        return const GlobalTrendsWidget();
       default:
         return Container();
     }

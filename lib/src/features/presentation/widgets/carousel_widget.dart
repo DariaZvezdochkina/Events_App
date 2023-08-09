@@ -12,7 +12,7 @@ class CarouselWidget extends StatefulWidget {
 
 class _CarouselWidgetState extends State<CarouselWidget> {
   final List<String> imageUrls = [
-    'assets/images/meeting_card.png',
+    'assets/images/meeting card.jpg',
     'assets/images/picture_1.jpeg',
     'assets/images/picture_3.jpeg',
   ];
@@ -55,7 +55,7 @@ class _CarouselWidgetState extends State<CarouselWidget> {
           color: const Color.fromRGBO(33, 33, 34, 1),
           pageCount: imageUrls.length,
           activeIndex: _currentIndex,
-          inactiveColor: Color.fromRGBO(253, 240, 244, 1),
+          inactiveColor: const Color.fromRGBO(253, 240, 244, 1),
         ),
       ],
     );

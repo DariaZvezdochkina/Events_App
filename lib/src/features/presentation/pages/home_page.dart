@@ -68,13 +68,13 @@ class HomePageState extends State<HomePage> {
       case 0:
         return const HomeWidget();
       case 1:
-        return const Text('Мероприятия'); // Replace with your text content
+        return const Text('Мероприятия');
       case 2:
-        return Text("Чат"); // Replace with your image content
+        return const Text("Чат");
       case 3:
-        return Text("Профиль"); // Replace with your profile content
+        return const Text("Профиль");
       default:
-        return Container(); // Return an empty container as default
+        return Container();
     }
   }
 
@@ -84,7 +84,7 @@ class HomePageState extends State<HomePage> {
       body: Padding(
         padding: const EdgeInsets.only(top: 60, left: 20, right: 20),
         child: Center(
-          child: _buildContent(), // Use the function to show different content
+          child: _buildContent(),
         ),
       ),
       bottomNavigationBar: SizedBox(
